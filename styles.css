@@ -1,0 +1,209 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #1f2937;
+}
+
+button,
+input,
+textarea,
+select {
+    font: inherit;
+}
+
+.app-container {
+    max-width: 1450px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+.app-header {
+    background: white;
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+}
+
+.app-header h1 {
+    margin: 0 0 8px;
+    font-size: 28px;
+}
+
+.app-header p {
+    margin: 0;
+    color: #4b5563;
+}
+
+.layout-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    gap: 20px;
+}
+
+.left-column,
+.right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+}
+
+.card h2 {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-size: 20px;
+}
+
+.form-grid {
+    display: grid;
+    gap: 12px;
+}
+
+.form-grid input,
+.form-grid textarea,
+.form-grid select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    background: #fff;
+}
+
+button {
+    background: #111827;
+    color: white;
+    border: none;
+    padding: 11px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.92;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.danger-button {
+    background: #b91c1c;
+}
+
+.status-message {
+    margin-top: 12px;
+    color: #0f766e;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+.docs-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.docs-table th,
+.docs-table td {
+    border-bottom: 1px solid #e5e7eb;
+    padding: 12px 10px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.docs-table th {
+    background: #f9fafb;
+}
+
+.actions-cell {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.chat-box {
+    min-height: 420px;
+    max-height: 620px;
+    overflow-y: auto;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 16px;
+    background: #fafafa;
+}
+
+.empty-chat {
+    color: #6b7280;
+}
+
+.message {
+    margin-bottom: 16px;
+    padding: 14px;
+    border-radius: 12px;
+}
+
+.message.user {
+    background: #dbeafe;
+}
+
+.message.assistant {
+    background: #ecfdf5;
+}
+
+.message-role {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.message-content {
+    white-space: pre-wrap;
+    line-height: 1.5;
+}
+
+.sources-box {
+    margin-top: 12px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.sources-box ul {
+    margin: 8px 0 0;
+    padding-left: 18px;
+}
+
+.chat-form {
+    margin-top: 16px;
+    display: grid;
+    gap: 12px;
+}
+
+.chat-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+@media (max-width: 1100px) {
+    .layout-grid {
+        grid-template-columns: 1fr;
+    }
+}
